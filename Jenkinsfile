@@ -24,8 +24,9 @@ pipeline
               {
                 script{
                     texto = "La edad es: ${edad}" 
-                    writeFile(file: nombre_fichero, text: texto)
-                    echo "Archivo creado con la edad calculada en: ${nombre_fichero}"
+                    fichero = ruta_del_fichero + nombre_fichero
+                    writeFile(file: fichero, text: texto)
+                    echo "Archivo creado con la edad calculada en: ${fichero}"
                   
                 }
               }   
