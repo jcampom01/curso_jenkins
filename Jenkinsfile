@@ -14,7 +14,7 @@ pipeline
             steps
             {
               script{
-              def anio_actual = fecha_actual.getYear() 
+              def anio_actual = fecha_actual.getYear() + 1900
               edad = anio_actual - fecha_nac
               }
             }   
